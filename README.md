@@ -1,4 +1,4 @@
-# 🚀 CodeAlpha Frontend Development Internship Tasks
+#  CodeAlpha Frontend Development Internship Tasks
 
 This repository contains my completed projects for the CodeAlpha Frontend Development Internship.
 
