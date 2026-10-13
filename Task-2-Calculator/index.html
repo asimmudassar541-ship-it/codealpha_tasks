@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator | CodeAlpha</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="calculator">
+
+        <!-- Calculator Header -->
+        <header class="calculator-header">
+            <div>
+                <p class="small-text">CODEALPHA</p>
+                <h1>Calculator</h1>
+            </div>
+
+            <div class="calculator-icon">Basic</div>
+        </header>
+
+
+        <!-- Display -->
+        <section class="display-section">
+
+            <div id="previousDisplay" class="previous-display">
+                0
+            </div>
+
+            <div id="currentDisplay" class="current-display">
+                0
+            </div>
+
+        </section>
+
+
+        <!-- Calculator Buttons -->
+        <section class="buttons">
+
+            <!-- Row 1 -->
+            <button class="button clear-btn" data-action="clear">
+                AC
+            </button>
+
+            <button class="button delete-btn" data-action="delete">
+                DEL
+            </button>
+
+            <button class="button operator-btn" data-operation="%">
+                %
+            </button>
+
+            <button class="button operator-btn" data-operation="÷">
+                ÷
+            </button>
+
+
+            <!-- Row 2 -->
+            <button class="button number-btn" data-number="7">
+                7
+            </button>
+
+            <button class="button number-btn" data-number="8">
+                8
+            </button>
+
+            <button class="button number-btn" data-number="9">
+                9
+            </button>
+
+            <button class="button operator-btn" data-operation="×">
+                ×
+            </button>
+
+
+            <!-- Row 3 -->
+            <button class="button number-btn" data-number="4">
+                4
+            </button>
+
+            <button class="button number-btn" data-number="5">
+                5
+            </button>
+
+            <button class="button number-btn" data-number="6">
+                6
+            </button>
+
+            <button class="button operator-btn" data-operation="−">
+                −
+            </button>
+
+
+            <!-- Row 4 -->
+            <button class="button number-btn" data-number="1">
+                1
+            </button>
+
+            <button class="button number-btn" data-number="2">
+                2
+            </button>
+
+            <button class="button number-btn" data-number="3">
+                3
+            </button>
+
+            <button class="button operator-btn" data-operation="+">
+                +
+            </button>
+
+
+            <!-- Row 5 -->
+            <button class="button number-btn zero-btn" data-number="0">
+                0
+            </button>
+
+            <button class="button number-btn" data-number=".">
+                .
+            </button>
+
+            <button class="button equal-btn" data-action="calculate">
+                =
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>CodeAlpha Internship Project</p>
+        <p>Calculator </p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player | CodeAlpha</title>
+
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="music-player">
+
+        <!-- Player Header -->
+        <header class="player-header">
+            <div>
+                <p class="small-text">NOW PLAYING</p>
+                <h1>Music Player</h1>
+            </div>
+
+            <div class="music-icon">♪</div>
+        </header>
+
+
+        <!-- Main Player -->
+        <section class="player-section">
+
+            <!-- Album Cover -->
+            <div class="album-container">
+                <img
+                    id="albumCover"
+                    src="assets/images/song-1.jpg"
+                    alt="Album Cover"
+                >
+            </div>
+
+
+            <!-- Song Information -->
+            <div class="song-info">
+                <h2 id="songTitle">Blinding Lights</h2>
+                <p id="artistName">The Weeknd</p>
+            </div>
+
+
+            <!-- Progress Section -->
+            <div class="progress-section">
+
+                <div class="time-container">
+                    <span id="currentTime">00:00</span>
+                    <span id="duration">00:00</span>
+                </div>
+
+                <input
+                    type="range"
+                    id="progressBar"
+                    min="0"
+                    max="100"
+                    value="0"
+                >
+
+            </div>
+
+
+            <!-- Player Controls -->
+            <div class="player-controls">
+
+                <button
+                    id="previousBtn"
+                    class="control-btn"
+                    aria-label="Previous song"
+                >
+                    ⏮
+                </button>
+
+                <button
+                    id="playBtn"
+                    class="play-btn"
+                    aria-label="Play or pause"
+                >
+                    ▶
+                </button>
+
+                <button
+                    id="nextBtn"
+                    class="control-btn"
+                    aria-label="Next song"
+                >
+                    ⏭
+                </button>
+
+            </div>
+
+
+            <!-- Volume Control -->
+            <div class="volume-section">
+
+                <span class="volume-icon">🔊</span>
+
+                <input
+                    type="range"
+                    id="volumeBar"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                    aria-label="Volume"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- Playlist -->
+        <section class="playlist-section">
+
+            <div class="playlist-header">
+                <h2>Playlist</h2>
+                <span id="playlistCount">4 Songs</span>
+            </div>
+
+
+            <div id="playlist" class="playlist">
+
+                <!-- Song 1 -->
+                <div
+                    class="playlist-item active"
+                    data-index="0"
+                >
+                    <img
+                        src="assets/images/song-1.jpg"
+                        alt="Blinding Lights"
+                    >
+
+                    <div class="playlist-song-info">
+                        <h3>Blinding Lights</h3>
+                        <p>The Weeknd</p>
+                    </div>
+
+                    <span class="song-number">01</span>
+                </div>
+
+
+                <!-- Song 2 -->
+                <div
+                    class="playlist-item"
+                    data-index="1"
+                >
+                    <img
+                        src="assets/images/song-2.jpg"
+                        alt="Perfect"
+                    >
+
+                    <div class="playlist-song-info">
+                        <h3>Perfect</h3>
+                        <p>Ed Sheeran</p>
+                    </div>
+
+                    <span class="song-number">02</span>
+                </div>
+
+
+                <!-- Song 3 -->
+                <div
+                    class="playlist-item"
+                    data-index="2"
+                >
+                    <img
+                        src="assets/images/song-3.jpg"
+                        alt="Shape of You"
+                    >
+
+                    <div class="playlist-song-info">
+                        <h3>Shape of You</h3>
+                        <p>Ed Sheeran</p>
+                    </div>
+
+                    <span class="song-number">03</span>
+                </div>
+
+
+                <!-- Song 4 -->
+                <div
+                    class="playlist-item"
+                    data-index="3"
+                >
+                    <img
+                        src="assets/images/song-4.jpg"
+                        alt="Believer"
+                    >
+
+                    <div class="playlist-song-info">
+                        <h3>Believer</h3>
+                        <p>Imagine Dragons</p>
+                    </div>
+
+                    <span class="song-number">04</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Audio Element -->
+        <audio id="audioPlayer"></audio>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>CodeAlpha Internship Project</p>
+        <p>Music Player </p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+

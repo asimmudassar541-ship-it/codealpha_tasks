@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Gallery | CodeAlpha</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Vision<span>Gallery</span></a>
+
+            <p class="subtitle">
+                A collection of beautiful moments
+            </p>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="gallery-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="tag">MY COLLECTION</span>
+
+                    <h1>
+                        Explore the <span>Gallery</span>
+                    </h1>
+
+                    <p>
+                        Discover a collection of carefully selected
+                        photographs from different categories.
+                    </p>
+                </div>
+
+
+                <!-- Category Filters -->
+
+                <div class="filters">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="nature">
+                        Nature
+                    </button>
+
+                    <button class="filter-btn" data-filter="city">
+                        City
+                    </button>
+
+                    <button class="filter-btn" data-filter="travel">
+                        Travel
+                    </button>
+
+                    <button class="filter-btn" data-filter="architecture">
+                        Architecture
+                    </button>
+
+                </div>
+
+
+                <!-- Gallery -->
+
+                <div class="gallery" id="gallery">
+
+                    <article
+                        class="gallery-item"
+                        data-category="nature"
+                        data-index="0"
+                    >
+                        <img
+                            src="assets/images/image-1.jpg"
+                            alt="Beautiful mountain landscape"
+                            loading="lazy"
+                        >
+
+                        <div class="image-overlay">
+                            <span>Nature</span>
+                            <h3>Mountain Escape</h3>
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="gallery-item"
+                        data-category="city"
+                        data-index="1"
+                    >
+                        <img
+                            src="assets/images/image-2.jpg"
+                            alt="Modern city skyline"
+                            loading="lazy"
+                        >
+
+                        <div class="image-overlay">
+                            <span>City</span>
+                            <h3>Urban Lights</h3>
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="gallery-item"
+                        data-category="travel"
+                        data-index="2"
+                    >
+                        <img
+                            src="assets/images/image-3.jpg"
+                            alt="Travel destination"
+                            loading="lazy"
+                        >
+
+                        <div class="image-overlay">
+                            <span>Travel</span>
+                            <h3>New Adventure</h3>
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="gallery-item"
+                        data-category="architecture"
+                        data-index="3"
+                    >
+                        <img
+                            src="assets/images/image-4.jpg"
+                            alt="Modern architecture"
+                            loading="lazy"
+                        >
+
+                        <div class="image-overlay">
+                            <span>Architecture</span>
+                            <h3>Modern Structure</h3>
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="gallery-item"
+                        data-category="nature"
+                        data-index="4"
+                    >
+                        <img
+                            src="assets/images/image-5.jpg"
+                            alt="Forest landscape"
+                            loading="lazy"
+                        >
+
+                        <div class="image-overlay">
+                            <span>Nature</span>
+                            <h3>Into the Wild</h3>
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="gallery-item"
+                        data-category="travel"
+                        data-index="5"
+                    >
+                        <img
+                            src="assets/images/image-6.jpg"
+                            alt="Beautiful travel location"
+                            loading="lazy"
+                        >
+
+                        <div class="image-overlay">
+                            <span>Travel</span>
+                            <h3>Wander More</h3>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="lightbox-close" id="closeLightbox">
+            &times;
+        </button>
+
+        <button class="lightbox-btn prev" id="prevBtn">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="Gallery preview"
+            >
+
+            <div class="lightbox-info">
+
+                <h3 id="lightboxTitle">
+                    Image Title
+                </h3>
+
+                <p id="lightboxCategory">
+                    Category
+                </p>
+
+                <span id="imageCounter">
+                    1 / 6
+                </span>
+
+            </div>
+
+        </div>
+
+        <button class="lightbox-btn next" id="nextBtn">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <footer class="footer">
+
+        <p>
+            © 2026 VisionGallery · CodeAlpha Internship Project
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
